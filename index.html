@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="reservation">
+        <div class="container">
+            <h2 class="reservation-title"  >Забронируйте отдых на Байкале</h2>
+            <form class="form" action="#">
+                <div class="reservation-main-form">
+                    <input type="name" name="name" placeholder="Ваше имя" required>
+                    <input type="tel" name="phone_number" placeholder="Телефон" required>
+                    <input type="email" name="email" placeholder="Почта" required>
+                    <input type="text" name="baikal_area" placeholder="Местность байкала">
+                    <input type="text" name="age_adult" placeholder="Количество взрослых">
+                    <input type="text" name="age_children" placeholder="Количество детей, их возраст">
+                </div>
+                <div class="reservation-second-form">
+                    <div class="date">
+                        <input type="datetime" name="date_start" placeholder="Дата заезда">
+                        <input type="datetime" name="date_finish" placeholder="Дата отъезда"> 
+                    </div>
+                    <textarea name="comment"  placeholder="Комментарий"></textarea>
+                </div>                
+                <div class="reservation-cheked-form">
+                    <button type="submit">Отправить заявку</button>
+                    <div class="checkbox">
+                        <input class="custom-checkbox" type="checkbox" id="check" name="private_form" required>
+                        <label for="check">
+                        <a href="private.html">Согласие на обработку персональных данных</a>
+                        </label>
+                    </div>
+                </div>
+                
+
+            </form>
+        </div>
+    </section>
+</body>
+</html>
